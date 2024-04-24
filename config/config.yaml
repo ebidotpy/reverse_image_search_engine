@@ -1,0 +1,11 @@
+root_dir: "artifacts"
+
+data_ingestion:
+  root_dir: "artifacts/data_ingestion"
+  source: "artifacts/data_ingestion/source"
+  target: "artifacts/data_ingestion/target"
+
+data_validation:
+  root_dir: "artifacts/data_validation"
+  status_file_path: "artifacts/data_validation/status.yaml"
+  require_files: ["source", target]
